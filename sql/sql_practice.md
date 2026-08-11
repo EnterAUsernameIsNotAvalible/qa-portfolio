@@ -53,7 +53,7 @@ FROM buildings
 LEFT JOIN employees ON buildings.building_name = employees.building;
 ```
 
-### 3. ⭐ Знайти те, у чого немає пари
+### 3. Знайти те, у чого немає пари
 ```sql
 -- Задача: будівлі без жодного працівника
 -- Головний патерн. Три частини працюють разом:
@@ -89,7 +89,7 @@ FROM employees
 WHERE role = 'Engineer';
 ```
 
-### 3. ⭐ JOIN + GROUP BY + SUM(вираз) — усе разом
+### 3. JOIN + GROUP BY + SUM(вираз) — усе разом
 ```sql
 -- Задача: total domestic + international sales attributed to each director
 -- Пастка 1: GROUP BY movie_id замість GROUP BY director — кожен movie_id
